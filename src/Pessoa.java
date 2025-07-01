@@ -1,16 +1,16 @@
 public class Pessoa {
 
     private String nome;
-    private double numero;
+    private String numero;
     private String email;
 
 
-    Pessoa(String nome, double numero){
+    Pessoa(String nome, String numero){
         this.nome = nome;
         this.numero = numero;
     }
 
-    Pessoa(String nome, double numero, String email){
+    Pessoa(String nome, String numero, String email){
         this.nome = nome;
         this.numero = numero;
         this.email = email;
@@ -25,11 +25,11 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public double getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(double numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 

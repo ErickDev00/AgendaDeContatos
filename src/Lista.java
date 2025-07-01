@@ -9,4 +9,11 @@ public class Lista {
         pessoasLista.add(pessoa);
     }
 
+    public void verLista(){
+        for (Pessoa p : pessoasLista){
+            System.out.println("Usuário: " + p.getNome() + "\n Telefone: " + p.getNumero() +
+                    "\n Email: " + p.getEmail());
+        }
+    }
+
 }
