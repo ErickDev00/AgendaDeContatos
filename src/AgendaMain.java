@@ -8,6 +8,7 @@ public class AgendaMain {
 
         for (int i=0; i <= 10; i++ ){
 
+            //menu principal
             int opcaoMenu = 0;
             System.out.println("Digite a opção desejada \n Opção 1: Adicionar Contato" +
                     "\n Opção 2: Ver Lista de Contatos");
@@ -41,8 +42,10 @@ public class AgendaMain {
                         agenda.adicionarPessoa(p);
                         System.out.println("Contado Adicionado");
                     }
-            } else {
+            } if (opcaoMenu == 2) {
                 agenda.verLista();
+            } else {
+                System.out.println("Opção Inválida");
             }
 
 
